@@ -67,9 +67,7 @@ class _HomepageState extends State<Homepage> {
                   " . ",
                   style: TextStyle(color: Colors.grey, fontSize: 25.sp),
                 ),
-                TextButton(onPressed: () {
-                  print(Mainappprovider.index);
-                }, child: Text("get index")),
+               
                 TextButton(
                   style: TextButton.styleFrom(
                   backgroundColor: Mainappprovider.index == 1 ? Colors.grey[850] : Colors.transparent,
