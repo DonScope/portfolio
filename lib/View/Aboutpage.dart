@@ -5,9 +5,8 @@ import 'package:portfolio/Controller/MainAppProvider.dart';
 import 'package:provider/provider.dart';
 
 class Aboutpage extends StatelessWidget {
-  final Function(int) onPortfolioPressed;
 
-  const Aboutpage({super.key, required this.onPortfolioPressed});
+  const Aboutpage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +57,8 @@ class Aboutpage extends StatelessWidget {
                                 height: 50.h,
                                 child: InkWell(
                                   onTap: () {
-                                    onPortfolioPressed(1);
+                                    Mainappprovider.index;
+                                    
                                   },
                                   child: Center(
                                     child: Text(
